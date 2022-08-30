@@ -211,11 +211,18 @@ function checkingFirstLine() {
     if (activePlayer === 1) {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
+      oneOne.src = 'xxxrr.jpg';
+      oneTwo.src = 'xxxrr.jpg';
+      oneThree.src = 'xxxrr.jpg';
+
       isPlaying = false;
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      oneOne.src = 'ooorr.jpg';
+      oneTwo.src = 'ooorr.jpg';
+      oneThree.src = 'ooorr.jpg';
     }
   }
 }
@@ -228,10 +235,16 @@ function checkingSecondLine() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      twoOne.src = 'xxxrr.jpg';
+      twoTwo.src = 'xxxrr.jpg';
+      twoThree.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      twoOne.src = 'ooorr.jpg';
+      twoTwo.src = 'ooorr.jpg';
+      twoThree.src = 'ooorr.jpg';
     }
   }
 }
@@ -244,10 +257,16 @@ function checkingThirdLine() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      threeOne.src = 'xxxrr.jpg';
+      threeTwo.src = 'xxxrr.jpg';
+      threeThree.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      threeOne.src = 'ooorr.jpg';
+      threeTwo.src = 'ooorr.jpg';
+      threeThree.src = 'ooorr.jpg';
     }
   }
 }
@@ -259,10 +278,16 @@ function chekingFirstVertical() {
     if (activePlayer === 1) {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
+      oneOne.src = 'xxxrr.jpg';
+      twoOne.src = 'xxxrr.jpg';
+      threeOne.src = 'xxxrr.jpg';
       isPlaying = false;
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
+      oneOne.src = 'ooorr.jpg';
+      twoOne.src = 'ooorr.jpg';
+      threeOne.src = 'ooorr.jpg';
       isPlaying = false;
     }
   }
@@ -275,10 +300,16 @@ function chekingSecondVertical() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      oneTwo.src = 'xxxrr.jpg';
+      twoTwo.src = 'xxxrr.jpg';
+      threeTwo.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      oneTwo.src = 'ooorr.jpg';
+      twoTwo.src = 'ooorr.jpg';
+      threeTwo.src = 'ooorr.jpg';
     }
   }
 }
@@ -291,10 +322,16 @@ function chekingThirdVertical() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      oneThree.src = 'xxxrr.jpg';
+      twoThree.src = 'xxxrr.jpg';
+      threeThree.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      oneThree.src = 'ooorr.jpg';
+      twoThree.src = 'ooorr.jpg';
+      threeThree.src = 'ooorr.jpg';
     }
   }
 }
@@ -307,10 +344,16 @@ function chekingDiagonalOne() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      oneOne.src = 'xxxrr.jpg';
+      twoTwo.src = 'xxxrr.jpg';
+      threeThree.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      oneOne.src = 'ooorr.jpg';
+      twoTwo.src = 'ooorr.jpg';
+      threeThree.src = 'ooorr.jpg';
     }
   }
 }
@@ -323,10 +366,16 @@ function chekingDiagonalTwo() {
       winner.classList.remove('hidden');
       winner.textContent = 'ხ-ებმა მოიგეს';
       isPlaying = false;
+      oneThree.src = 'xxxrr.jpg';
+      twoTwo.src = 'xxxrr.jpg';
+      threeOne.src = 'xxxrr.jpg';
     } else {
       winner.classList.remove('hidden');
       winner.textContent = 'ო-ებმა მოიგეს';
       isPlaying = false;
+      oneThree.src = 'ooorr.jpg';
+      twoTwo.src = 'ooorr.jpg';
+      threeOne.src = 'ooorr.jpg';
     }
   }
 }
@@ -346,5 +395,14 @@ function isDraw() {
       winner.classList.remove('hidden');
       winner.textContent = 'ფრეა!';
     }
+    oneOne.src = `${oos === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    oneTwo.src = `${otws === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    oneThree.src = `${oths === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    twoOne.src = `${to === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    twoTwo.src = `${twt === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    twoThree.src = `${tth === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    threeOne.src = `${tho === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    threeTwo.src = `${tht === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
+    threeThree.src = `${thth === 'xxxxx.jpg' ? 'xxxbb.jpg' : 'ooobb.jpg'}`;
   }
 }
