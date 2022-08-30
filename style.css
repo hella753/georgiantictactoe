@@ -7,11 +7,13 @@ img {
   cursor: pointer;
 }
 .game {
-  margin-left: 480px;
+  /*margin-left: 480px;*/
   margin-top: 150px;
+  text-align: center;
 }
 .hidden {
-  display: none;
+  opacity: 0;
+  display: flex;
 }
 .win {
   text-align: center;
@@ -48,11 +50,8 @@ body {
   margin-top: 5px;
   transition: 0.5s;
 }
-.one,
-.two,
-.three {
+.game {
   display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-gap: 4px;
-  margin-bottom: 4px;
+  grid-gap: 0px;
+  margin-bottom: 0px;
 }
